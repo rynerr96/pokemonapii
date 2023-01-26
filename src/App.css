@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+.div--isLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-prymary);
+  border-radius:2rem ;
+  position: absolute;
+  z-index: 2;
+  top: -20vh;
+  left: -5vw;
+}
+
+.div__img--isLoading{
+  width: 400px;
+}
+
+.div__h2--isLoading{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5%;
+  letter-spacing: 5px;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.div--isError{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: var(--color-prymary);
+  margin: 0 auto; 
+}
+
+.div__div--isError{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__div--imgIsError{
+  width: 9rem;
+}
+.div__div--h2IsError{
+  font-size: 10rem;
+  font-weight: 600;
+  margin: 1%;
+}
+
+.div__h2--isError{
+  font-size: 1.5rem;
+  color: var(--color--text);
+  margin-top: 5%;
+}
+
+/* ButtonIncreaseDecrease */
+
+.div__div--divPokemons, .div--paginated{
+  display: flex;
+  width: 100%;
+  margin: 2% 0;
+}
+
+.div__div--paginated{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+
+/* selection per Page */
+
+.div--paginated{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__selectionPerPage{
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  position: fixed;
+  flex-direction: column;
+}
+
+.div__img--selectionPerPage{
+  width: 10%;
+
+}
+
+.div__div--selectionPerPage{
+  display: none;
+  transition: all 1s;
+}
+
+.div__selectionPerPage:hover 
+.div__img--selectionPerPage{
+  width: 10%;
+  display:none;
+}
+
+.div__selectionPerPage:hover 
+.div__div--selectionPerPage{
+  display: block;
+}
+
+
+.div__div--buttonSelectionPerPage{
+  display: none;
+  border: none;
+  background-color: var(--color--third);
+  border-radius: 50%;
+  font-size: 1,5rem;
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  margin: 5%;
+}
+
+.div__div--buttonSelectionPerPage:hover{
+cursor: pointer;
+background-color: var(--color-secondary);
+transform: scale(110%);
+transition: all 1s;
+}
+
+.div__div--buttonPaginated{
+  background-color: var( --color-secondary);
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2% auto;
+  margin: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.div__div--buttonPaginated:active{
+  opacity: 0.2;
+  transform: scale(90%);
+  transition: all 1s;
+}
+
+.div__div--buttonNumber{
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.div__div--buttonNumber:hover{
+  color: var(--color-secondary);
+}
+
+.div__div--paginatedNumbers{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  width: 30%;
+  position: absolute;
+  overflow: hidden;
+ 
+}
+
+
+

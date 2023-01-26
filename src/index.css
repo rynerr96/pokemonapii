@@ -1,0 +1,150 @@
+:root {
+  /* Colores */
+  --color-prymary: #FAFAFA;
+  --color-secondary: #FF0000;
+  --color--third: #D93F3F;
+  --color--quarter: #FFFFFF;
+  --color--fith: #817b7b;
+  --color--boxShadow: rgba(0, 0, 0, .1);
+  --color--text: #000000;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-prymary: #303030;
+    --color-secondary: #FF0000;
+    --color--third: #D93F3F;
+    --color--quarter: #000000;
+    --color--fith: #7E8D8E;
+    --color--text: #FFFFFF;
+    --color--boxShadow:#463939;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primario: black;
+    --color-secundario: white;
+  }
+}
+
+/* Reseteamos los margin y paddings de todas las etiquetas
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+/* imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*  Enlaces  */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* puntos de <li> */
+li {
+  list-style-type: none;
+}
+
+/* estilos por defecto texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* seleccion de texto */
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+/* forms */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color--text);
+}

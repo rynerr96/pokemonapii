@@ -1,0 +1,1 @@
+className={`poke-card border-${pokemon?.types[0].type.name}`}
